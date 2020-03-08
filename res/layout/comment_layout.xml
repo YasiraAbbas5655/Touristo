@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Image_Of_Person_Commenting"
+        android:layout_width="80dp"
+        android:src="@drawable/lahore"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/Name_Of_Person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Image_Of_Person_Commenting"
+        android:text="Place Name"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Image_Of_Person_Commenting"
+        android:layout_below="@+id/Name_Of_Person"
+        android:text="Place Description"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

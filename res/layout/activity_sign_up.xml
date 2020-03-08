@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/tourist_cliff_rocks_sea_115481_720x1280"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:outlineAmbientShadowColor="@android:color/white"
+        android:layout_marginTop="300dp"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/register_AppLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="180dp">
+        <TextView
+            android:id="@+id/app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/app_logo_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URISTO"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/app_logo"
+            android:textColor="@android:color/holo_green_light"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/register_Name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_AppLogo"
+        android:background="@drawable/description"
+        android:padding="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Email"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/register_Pass_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_Name_input"
+        android:background="@drawable/description"
+        android:padding="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_Pass_input"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/textviewstyle"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Create Account"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
